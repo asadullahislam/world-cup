@@ -215,6 +215,10 @@ button.view-all {
     background-color: rgb(39, 36, 36);
     color: white;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer-head {
@@ -222,6 +226,7 @@ button.view-all {
     align-items: center;
     text-align: center;
     padding-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 hr {
@@ -234,9 +239,20 @@ hr {
 #footer {
     display: flex;
     gap: 30px;
-
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
+}
+
+.social-icon {
+    margin: 25px 0px;
+}
+
+.social-icon a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
 }
 
 /* finish footer  */
