@@ -5,108 +5,128 @@
 /*---------
  common styles
 ---------- */
-body{
+body {
     font-family: 'Lora', serif;
     font-family: 'Poppins', sans-serif;
-  
+
 }
 
-h1{
-    font-size: 50px;
-    
+h1 {
+    font-size: 3vw;
+
 }
+
 /* great-player */
-.great-player{
-    display: flex;
-    border:2px solid blanchedalmond;
-    width:100%;
-    height: 700px;
-
+.great-player {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid blanchedalmond;
     background-color: black;
+    min-height: 80vh;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-bottom: 20px;
-    align-content: center;
-
-    
-}
-    .plyer{
-        width: 700px;
-        color:white;
-    
-}
-.great-player div img{
-    width:700px;
-}
- 
+    margin-bottom: 100px;
 
 
-.link-button{
+}
+
+.plyer {
+    color: white;
+    padding: 0px 100px;
+
+}
+
+
+
+.great-player div img {
+    width: 100%;
+}
+
+
+
+.link-button {
     text-decoration: none;
-    background-image: linear-gradient(red,red);
-    color:white;
-    padding:10px 20px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
     font-weight: 700px;
     border-radius: 5px;
-    font-size: 2em;
+    font-size: 1em;
 
 
+}
+
+.link-button:hover {
+    background-color: orange;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.link-button:hover i {
+    margin-left: 20px;
+    transition: all 0.5s ease-in-out;
 }
 
 /* upcoming match */
 
-.match{
+.match {
     border-radius: 5px;
-    border: 2px solid black ;
+    border: 2px solid black;
     height: 300px;
     min-width: 250px;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     text-align: center;
     justify-content: center;
     align-items: center;
     background-color: black;
     margin-right: 20px;
-    
+
 
 
 
 }
-.match{
+
+.match {
     padding: 0px 15px;
 }
-.match button{
+
+.match button {
     padding: 10px;
     border-radius: 10px;
 }
-.upcoming{
+
+.upcoming {
     text-decoration: none;
     text-align: center;
-    color:black;
+    color: black;
     font-size: 2em;
     width: 30px;
     height: 10px;
-    
+
 }
-.upcome{
+
+.upcome {
     text-decoration: none;
     text-align: center;
-    color:black;
+    color: black;
     font-size: 2em;
     width: 30px;
     height: 10px;
 }
-#bllogs{
+
+#bllogs {
     text-decoration: none;
     text-align: center;
-    color:white;
+    color: white;
     font-size: 2em;
     width: 30px;
     height: 10px;
-    
+
 }
-button.red-button{
+
+button.red-button {
     background-color: red;
 }
 
@@ -114,7 +134,7 @@ button.red-button{
 
 /* blog market */
 
-#blog-market{
+#blog-market {
     display: flex;
 }
 
@@ -122,57 +142,65 @@ button.red-button{
 /*----------------
    transfer market
 ------------------ */
-#transfer-market{
+#transfer-market {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.upper-section{
+
+.upper-section {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 
 }
-button.view-all{
-height: 50px;
-width: 150px;
-color: white;
-font-size: 25px;
-border: none;
-border-radius: 10px;
-display: none;
+
+button.view-all {
+    height: 50px;
+    width: 150px;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    display: none;
 }
 
- 
+
 /* transfer */
 
-.transfer{
+.transfer {
     margin-right: 20px;
     margin-bottom: 20px;
     border: 2px solid lightgoldenrodyellow;
     border-radius: 20px;
 
 }
-.news{
-    text-decoration:none;
+
+.transfer-img img {
+    width: 100%;
+}
+
+.news {
+    text-decoration: none;
     text-align: center;
     border: 2px solid plum;
 }
 
 /* first transfer news font */
 
-.font{
+.font {
     margin-right: 20px;
-    
+
 }
-.transfer-news{
-    
-}
-.fa-clock{
+
+.transfer-news {}
+
+.fa-clock {
     margin-right: 8px;
-    
+
 }
-.fa-comment-dots{
+
+.fa-comment-dots {
     margin-right: 8px;
 }
 
@@ -180,25 +208,28 @@ display: none;
 
 
 /* footer */
-.footer-blog{
+.footer-blog {
     background-color: rgb(39, 36, 36);
     color: white;
     border-radius: 20px;
 }
-#footer-head{
+
+#footer-head {
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-hr{
+hr {
     text-align: center;
     margin-top: 50px;
     width: 90%;
-    
+
 }
-#footer{
+
+#footer {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -219,42 +250,58 @@ hr{
 /*-----------
  Mobile Devices
 ------------- */
-@media only screen  and (max-width:688px){
+@media only screen and (max-width:688px) {
 
-    .great-player{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
+    .great-player {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header {
+        font-size: 30px;
     }
 }
+
 @media screen and (max-width:688px) {
-    .upper-section{
-        grid-template-columns: repeat(1,1fr);
+    .upper-section {
+        grid-template-columns: repeat(1, 1fr);
     }
-    #blog-market{
+
+    #blog-market {
         flex-direction: column;
     }
-    #footer{
+
+    #footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
+    .match {
+        background-color: white;
+        border: none;
+    }
 }
+
 /* for tab */
 @media screen and (min-width:689px) and (max-width:992px) {
-    .upper-section{
-        grid-template-columns: repeat(2,1fr);
+    .upper-section {
+        grid-template-columns: repeat(2, 1fr);
     }
-    #blog-market{
+
+    #blog-market {
         flex-direction: column;
     }
-    .match{
-    grid-template-columns: repeat(3,1fr);
-    max-height: 100px;
-    background-color: white;
-    border: none;
-    grid-column-gap: 10px;
+
+    .match {
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 100px;
+        background-color: white;
+        border: none;
+        grid-column-gap: 10px;
     }
-    button.view-all{
+
+    button.view-all {
         display: block;
     }
 }
